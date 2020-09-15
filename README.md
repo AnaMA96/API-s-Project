@@ -8,6 +8,8 @@
 En este proyecto utilizo el dataset [Daily Temperature of Major Cities](https://www.kaggle.com/sudalairajkumar/daily-temperature-of-major-cities), que me ofrece información acerca de la temperatura media de las ciudades de diferentes países del mundo hasta mayo de 2020. Esa información ha sido completada con la ofrecida por la **API "Meteostat"** para poder obtener los datos de los últimos meses así como otros relativos al tiempo como las precipitaciones medias por fecha y lugar. Para armonizar los datos, la columna de temperatura media del dataset ha sido transformada de ºF a ºC.
 A su vez, la API "Meteosat" se sirve de las coordenadas obtenidas por la **API "Geocode"** al hacer la llamada con el nombre de una ciudad concreta.
 
+(Para poder llevar a cabo las llamadas a la **API "Meteostat"** y debido a la limitación de información a 370 días por request, he utilizado la función "sleep" importando "time" ya que, si no ralentizaba las mismas unos segundos, se producía un error 429 por exceso de requests en un corto espacio de tiempo.)
+
 El dataset ha sido trabajado en un '.ipynb' para examinar la relevancia de la existencia de datos nulos en columnas importantes como la referente a la temperatura media, así como para unificar las columnas "Year", "Month" y "Day" en otra columna llamada "Date" y para pasar los nombres de éstas a minúsulas con intención de facilitar el trabajo de los datos. El archivo csv resultado de esta limpieza se encuentra en la carpeta 'output'.
 
 El programa para ser ejecutado en la terminal debe ser "llamado" con "python3 main.py" y recibir alguno de estos cuatro parámetros (argparse):
