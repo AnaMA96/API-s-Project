@@ -22,4 +22,9 @@ Las fechas han sido trabajadas en todo momento con el formato 'datetime' para fa
 
 Por otro lado, ofrece un gráfico con la evolución de las precipitaciones medias en el lugar que se le indique mostrando el cambio de una fecha a otra mediante el diferencial de la cantidad. Y, finalmente, permite filtrar los países a partir de una temperatura máxima indicada, obteniendo, por tanto, un set con los nombres de los países que han igualado y/o superado la misma.
 
+**Por cuestiones de privacidad y seguridad la api-key con la que se ha llevado a cabo el proyecto ha sido retirada del mismo. Para poder ejecutar el programa deberá obtener la suya propia a través del siguiente enlace: [Meteostat api-key](https://auth.meteostat.net)**
+
+
+© Meteostat 2020 | Legal Disclosure & Privacy| Powered by Meteostat. Raw data provided by NOAA, Deutscher Wetterdienst and others.
+
 
