@@ -11,10 +11,10 @@ A su vez, la API "Meteosat" se sirve de las coordenadas obtenidas por la **API "
 El dataset ha sido trabajado en un '.ipynb' para examinar la relevancia de la existencia de datos nulos en columnas importantes como la referente a la temperatura media, así como para unificar las columnas "Year", "Month" y "Day" en otra columna llamada "Date" y para pasar los nombres de éstas a minúsulas con intención de facilitar el trabajo de los datos. El archivo csv resultado de esta limpieza se encuentra en la carpeta 'output'.
 
 El programa para ser ejecutado en la terminal debe ser "llamado" con "python3 main.py" y recibir alguno de estos cuatro parámetros (argparse):
-'-c': la ciudad de la que quieres obtener la información
-'-s': la fecha por la que quieres empezar a obtener información. En formato mm/dd/yy.
-'-e', la fecha por la que quieres terminar de obtener información.En formato mm/dd/yy.
-'-t', la temperatura (máxima) por la que quieres filtrar la información.
+* '-c': la ciudad de la que quieres obtener la información
+* '-s': la fecha por la que quieres empezar a obtener información. En formato mm/dd/yy.
+* '-e', la fecha por la que quieres terminar de obtener información.En formato mm/dd/yy.
+* '-t', la temperatura (máxima) por la que quieres filtrar la información.
 
 Éste permite obtener un gráfico que muestra la evolución de la temperatura media de la ciudad introducida entre las fechas indicadas, obteniendo la información del dataset importado o de una llamada a la API en función de las fechas señaladas (atendiendo a los límites explicados en párrafos anteriores). En caso de no indicarse ninguna ciudad en concreto, el gráfico se pinta con la temperatura media global.
 
